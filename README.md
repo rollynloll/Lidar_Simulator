@@ -19,7 +19,7 @@
 **2.** **전체적인 파이프라인**
 
 본 플러그인은 MetaLidar 플러그인을 기반으로 설계되었으며, VelodyneBaseComponent (VC), VelodyneLidarActor (VA), HDFParserComponent (HP)를 중심으로 구성된다.
-(MetaLidar Git: https://github.com/metabotics-ai/MetaLidar(url))
+(MetaLidar Git: https://github.com/metabotics-ai/MetaLidar)
   **(1) VelodyneLidarActor (VA)**
   
     - Begin Play단계:
@@ -78,7 +78,53 @@
     3.     Niagara Particle System으로 충돌 위치 실시간 시각화
     
   ii. 예시
-<video width="640" height="360" controls>
-<source src="./Example_Video/ScanMode Video.mp4" type="video/mp4">
-브라우저가 video 태그를 지원하지 않습니다.
-</video>
+  
+[![YouTube 썸네일](https://img.youtube.com/vi/-W8CY4Kvdxk/0.jpg)](https://youtu.be/-W8CY4Kvdxk)
+
+  **(2)  Visualize Mode**
+  
+  i.	모드 설명
+  
+    1.	저장된 CSV 파일을 읽어 point cloud 정보로 변환
+    2.	정보를 Niagara System으로 전달하여 실시간 시각화
+
+  ii. 예시
+
+  [![YouTube 썸네일](https://img.youtube.com/vi/4DoOWkCwtHM/0.jpg)](https://youtu.be/4DoOWkCwtHM)
+  
+  **(3)  Animation Mode**
+
+  i. 모드 설명
+
+    1.    Thread 단계에서 프레임마다 Skeletal Mesh의 Polygon정보 추출
+    2.    EndPlay 단계에서 Polygon 정보를 바탕으로 메타휴먼의 Static Mesh
+    3.    생성한 프레임별 Static Mesh를 프로젝트에 저장하고 빌드
+
+  ii. 예시
+
+  [![YouTube 썸네일](https://img.youtube.com/vi/9rulrT0kaNA/0.jpg)](https://youtu.be/9rulrT0kaNA)
+
+  **(4)  LoadMesh Mode**
+
+  i. 모드 설명
+
+    1.	BeginPlay시 StaticMesh 폴더에 저장된 StaticMesh를 프레임별로 스폰하여 RayCasting 계산
+    2.	계산한 RayCasting값을 CSV 및 HDF파일로 저장
+    3.	모드를 Visualize Mode로 전환 후 Thread 단계 시행
+
+  ii. 예시
+
+  [![YouTube 썸네일](https://img.youtube.com/vi/MbRYjCY1FeA/0.jpg)](https://youtu.be/MbRYjCY1FeA)
+
+  **(5)  HDF5 Visualize Mode**
+
+  i.	모드 설명
+  
+    1.	HDF 파일을 읽어서 point cloud 시각화, visualize mode의 hdf 버전으로 보면 된다.
+    2.	프레임마다 hdf에서 point cloud 정보를 읽어서 배열에 저장
+    3.	Niagara System으로 전달하여 실시간 시각화
+
+  ii. 예시
+
+  없음, Visualize Mode 참고
+  
