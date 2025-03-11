@@ -79,6 +79,6 @@
     
   ii. 예시
 <video width="640" height="360" controls>
-<source src="ScanMode Video.mp4" type="video/mp4">
+<source src="./Example_Video/ScanMode Video.mp4" type="video/mp4">
 브라우저가 video 태그를 지원하지 않습니다.
 </video>
