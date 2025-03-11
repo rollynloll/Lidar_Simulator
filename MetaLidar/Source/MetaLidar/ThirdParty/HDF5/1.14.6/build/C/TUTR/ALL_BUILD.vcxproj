@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1A507CB7-7F43-3267-BC15-23D2FB71C14A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\HDF_Group\HDF5\1.14.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\HDF_Group\HDF5\1.14.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\HDF_Group\HDF5\1.14.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\HDF_Group\HDF5\1.14.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\HDF5Examples\C\TUTR\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/MOVIN_DataPC/Documents/Unreal Projects/ScanVerticles/Plugins/MetaLidar/Source/MetaLidar/ThirdParty/HDF5/1.14.6/HDF5Examples/C/TUTR/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/MOVIN_DataPC/Documents/Unreal Projects/ScanVerticles/Plugins/MetaLidar/Source/MetaLidar/ThirdParty/HDF5/1.14.6/HDF5Examples" "-BC:/Users/MOVIN_DataPC/Documents/Unreal Projects/ScanVerticles/Plugins/MetaLidar/Source/MetaLidar/ThirdParty/HDF5/1.14.6/build" --check-stamp-file "C:/Users/MOVIN_DataPC/Documents/Unreal Projects/ScanVerticles/Plugins/MetaLidar/Source/MetaLidar/ThirdParty/HDF5/1.14.6/build/C/TUTR/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\HDF5Examples\C\TUTR\C_sourcefiles.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\C\TUTR\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/MOVIN_DataPC/Documents/Unreal Projects/ScanVerticles/Plugins/MetaLidar/Source/MetaLidar/ThirdParty/HDF5/1.14.6/HDF5Examples/C/TUTR/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/MOVIN_DataPC/Documents/Unreal Projects/ScanVerticles/Plugins/MetaLidar/Source/MetaLidar/ThirdParty/HDF5/1.14.6/HDF5Examples" "-BC:/Users/MOVIN_DataPC/Documents/Unreal Projects/ScanVerticles/Plugins/MetaLidar/Source/MetaLidar/ThirdParty/HDF5/1.14.6/build" --check-stamp-file "C:/Users/MOVIN_DataPC/Documents/Unreal Projects/ScanVerticles/Plugins/MetaLidar/Source/MetaLidar/ThirdParty/HDF5/1.14.6/build/C/TUTR/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\HDF5Examples\C\TUTR\C_sourcefiles.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\C\TUTR\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/MOVIN_DataPC/Documents/Unreal Projects/ScanVerticles/Plugins/MetaLidar/Source/MetaLidar/ThirdParty/HDF5/1.14.6/HDF5Examples/C/TUTR/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/MOVIN_DataPC/Documents/Unreal Projects/ScanVerticles/Plugins/MetaLidar/Source/MetaLidar/ThirdParty/HDF5/1.14.6/HDF5Examples" "-BC:/Users/MOVIN_DataPC/Documents/Unreal Projects/ScanVerticles/Plugins/MetaLidar/Source/MetaLidar/ThirdParty/HDF5/1.14.6/build" --check-stamp-file "C:/Users/MOVIN_DataPC/Documents/Unreal Projects/ScanVerticles/Plugins/MetaLidar/Source/MetaLidar/ThirdParty/HDF5/1.14.6/build/C/TUTR/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\HDF5Examples\C\TUTR\C_sourcefiles.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\C\TUTR\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/MOVIN_DataPC/Documents/Unreal Projects/ScanVerticles/Plugins/MetaLidar/Source/MetaLidar/ThirdParty/HDF5/1.14.6/HDF5Examples/C/TUTR/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/MOVIN_DataPC/Documents/Unreal Projects/ScanVerticles/Plugins/MetaLidar/Source/MetaLidar/ThirdParty/HDF5/1.14.6/HDF5Examples" "-BC:/Users/MOVIN_DataPC/Documents/Unreal Projects/ScanVerticles/Plugins/MetaLidar/Source/MetaLidar/ThirdParty/HDF5/1.14.6/build" --check-stamp-file "C:/Users/MOVIN_DataPC/Documents/Unreal Projects/ScanVerticles/Plugins/MetaLidar/Source/MetaLidar/ThirdParty/HDF5/1.14.6/build/C/TUTR/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\HDF5Examples\C\TUTR\C_sourcefiles.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\C\TUTR\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\ZERO_CHECK.vcxproj">
+      <Project>{CBA36F16-45FD-3951-BE34-D22423DD7E71}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\C\TUTR\ex_tutr_h5_attribute.vcxproj">
+      <Project>{807EDF57-D85F-30E7-9D48-252C5113D218}</Project>
+      <Name>ex_tutr_h5_attribute</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\C\TUTR\ex_tutr_h5_chunk_read.vcxproj">
+      <Project>{F198B390-9CDD-39FC-B681-A61FC64EE8BE}</Project>
+      <Name>ex_tutr_h5_chunk_read</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\C\TUTR\ex_tutr_h5_cmprss.vcxproj">
+      <Project>{F6F19AE7-150A-35AA-AD82-8EB803FB331C}</Project>
+      <Name>ex_tutr_h5_cmprss</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\C\TUTR\ex_tutr_h5_compound.vcxproj">
+      <Project>{7DCB21EA-D36F-33E9-A9E3-8EE8FDC5CE64}</Project>
+      <Name>ex_tutr_h5_compound</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\C\TUTR\ex_tutr_h5_crtatt.vcxproj">
+      <Project>{48D0FF8A-00AA-3C87-AC1A-6B41E9483908}</Project>
+      <Name>ex_tutr_h5_crtatt</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\C\TUTR\ex_tutr_h5_crtdat.vcxproj">
+      <Project>{722F12B3-E4C5-3092-B1D1-AE3FB4818C0F}</Project>
+      <Name>ex_tutr_h5_crtdat</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\C\TUTR\ex_tutr_h5_crtgrp.vcxproj">
+      <Project>{BA9B70B9-B63C-324A-8DCB-66C5956D84A1}</Project>
+      <Name>ex_tutr_h5_crtgrp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\C\TUTR\ex_tutr_h5_crtgrpar.vcxproj">
+      <Project>{B64FD08B-E61B-3C0E-9856-D3BCA1B49311}</Project>
+      <Name>ex_tutr_h5_crtgrpar</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\C\TUTR\ex_tutr_h5_crtgrpd.vcxproj">
+      <Project>{5516AD79-5413-322F-B171-C3320D247DCE}</Project>
+      <Name>ex_tutr_h5_crtgrpd</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\C\TUTR\ex_tutr_h5_debug_trace.vcxproj">
+      <Project>{AADBE75F-B595-32DF-8C3F-E87128586DCD}</Project>
+      <Name>ex_tutr_h5_debug_trace</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\C\TUTR\ex_tutr_h5_drivers.vcxproj">
+      <Project>{90637AB9-E334-3234-B0CB-79F17CBDA22A}</Project>
+      <Name>ex_tutr_h5_drivers</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\C\TUTR\ex_tutr_h5_elink_unix2win.vcxproj">
+      <Project>{601232BA-326D-3ED4-A9F6-3967E4501B2E}</Project>
+      <Name>ex_tutr_h5_elink_unix2win</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\C\TUTR\ex_tutr_h5_extend.vcxproj">
+      <Project>{E8EDC7FE-43CA-3CA1-AB61-546E1006657A}</Project>
+      <Name>ex_tutr_h5_extend</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\C\TUTR\ex_tutr_h5_extend_write.vcxproj">
+      <Project>{3204243B-9ED5-3511-ABE0-B2398C3AB879}</Project>
+      <Name>ex_tutr_h5_extend_write</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\C\TUTR\ex_tutr_h5_extlink.vcxproj">
+      <Project>{53B10FDA-1284-3391-A81C-564F74F55D82}</Project>
+      <Name>ex_tutr_h5_extlink</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\C\TUTR\ex_tutr_h5_group.vcxproj">
+      <Project>{206F7DBC-4B87-3341-93D0-E881DC6D5F6F}</Project>
+      <Name>ex_tutr_h5_group</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\C\TUTR\ex_tutr_h5_mount.vcxproj">
+      <Project>{50829C82-C43D-339C-8E92-BA118508A4B5}</Project>
+      <Name>ex_tutr_h5_mount</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\C\TUTR\ex_tutr_h5_rdwt.vcxproj">
+      <Project>{266F1FE0-6D67-3D5F-8221-3733D3157A83}</Project>
+      <Name>ex_tutr_h5_rdwt</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\C\TUTR\ex_tutr_h5_read.vcxproj">
+      <Project>{E7006DB3-FAF3-3989-8216-DD6636911387}</Project>
+      <Name>ex_tutr_h5_read</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\C\TUTR\ex_tutr_h5_ref2reg_deprec.vcxproj">
+      <Project>{689EE6FA-4881-3877-B397-A8EF6520A0D8}</Project>
+      <Name>ex_tutr_h5_ref2reg_deprec</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\C\TUTR\ex_tutr_h5_ref_compat.vcxproj">
+      <Project>{F2323896-7E42-38AB-A243-2E6462B73078}</Project>
+      <Name>ex_tutr_h5_ref_compat</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\C\TUTR\ex_tutr_h5_ref_extern.vcxproj">
+      <Project>{457AE9FE-B8D9-384C-84E5-7C75225AA516}</Project>
+      <Name>ex_tutr_h5_ref_extern</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\C\TUTR\ex_tutr_h5_reference_deprec.vcxproj">
+      <Project>{2AB9B51D-6BA5-3158-B84C-A855855E33D3}</Project>
+      <Name>ex_tutr_h5_reference_deprec</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\C\TUTR\ex_tutr_h5_select.vcxproj">
+      <Project>{A6172755-54D7-3F01-A71F-D03D0EF2E58B}</Project>
+      <Name>ex_tutr_h5_select</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\C\TUTR\ex_tutr_h5_shared_mesg.vcxproj">
+      <Project>{D68771ED-CB6E-3F3E-ACE5-E37932145B9A}</Project>
+      <Name>ex_tutr_h5_shared_mesg</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\C\TUTR\ex_tutr_h5_subset.vcxproj">
+      <Project>{ACDF8FC9-B3E2-35C2-8D4E-4C2464E3C825}</Project>
+      <Name>ex_tutr_h5_subset</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\C\TUTR\ex_tutr_h5_write.vcxproj">
+      <Project>{ABC09FCB-D90D-3CE6-8E99-AF868A981E8E}</Project>
+      <Name>ex_tutr_h5_write</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

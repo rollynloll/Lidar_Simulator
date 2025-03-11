@@ -1,0 +1,10 @@
+^C:\USERS\MOVIN_DATAPC\DOCUMENTS\UNREAL PROJECTS\SCANVERTICLES\PLUGINS\METALIDAR\SOURCE\METALIDAR\THIRDPARTY\HDF5\1.14.6\HDF5EXAMPLES\C\H5VDS\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/MOVIN_DataPC/Documents/Unreal Projects/ScanVerticles/Plugins/MetaLidar/Source/MetaLidar/ThirdParty/HDF5/1.14.6/HDF5Examples" "-BC:/Users/MOVIN_DataPC/Documents/Unreal Projects/ScanVerticles/Plugins/MetaLidar/Source/MetaLidar/ThirdParty/HDF5/1.14.6/build" --check-stamp-file "C:/Users/MOVIN_DataPC/Documents/Unreal Projects/ScanVerticles/Plugins/MetaLidar/Source/MetaLidar/ThirdParty/HDF5/1.14.6/build/C/H5VDS/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

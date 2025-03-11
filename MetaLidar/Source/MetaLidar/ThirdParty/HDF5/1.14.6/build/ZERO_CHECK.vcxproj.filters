@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\MOVIN_DataPC\Documents\Unreal Projects\ScanVerticles\Plugins\MetaLidar\Source\MetaLidar\ThirdParty\HDF5\1.14.6\build\CMakeFiles\7021b9e09a481c83a3bc7644f466f359\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3079CB5A-3CB0-3463-A7C3-4AA45E8C2C28}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
